@@ -1,3 +1,200 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container{
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 500px;
+	margin-left: 60px;
+	justify-content: space-around;
+}
+
+
+
+nav a{
+	text-decoration: none;
+	margin: 20px;
+	margin-top: 30px;
+	
+	color: grey;
+	font-size: 12px;
+}
+
+
+
+header .logo{
+	height: 30px;
+	margin-top: 20px
+}
+
+.about{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between
+	
+}
+
+.image-button{
+	display: flex;
+	flex-direction: column;
+}
+
+.about .big-text{
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 170px
+}
+
+.button{
+	border: 2px solid black;
+	color: black;
+	text-decoration: none;
+	padding: 10px 20px;
+	padding-left: 30px;
+	display: block;
+	width: 150px;
+	margin-left: 230px;
+}
+
+.top-image{
+	width: 300px;
+	height: auto;
+	margin-top: 50px;
+	margin-right: 95px
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	width: 750px;
+	margin: 0px auto;
+	margin-top: 65px;
+	padding-bottom: 100px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 30px;
+	padding-bottom: 50px;
+	font-size: 12px;
+}
+
+.top-half{
+	display: flex;
+	justify-content:space-around;
+}
+
+.top-half .info{
+	width: 400px;
+}
+
+
+
+.middle-img{
+	margin: 40px 0px 25px 0px;
+	height: 150px;
+	width: 700px
+}
+
+.bottom-half{
+	display: flex;
+}
+
+.bottom-half .info{
+	width: 230px;
+	margin-right: 50px;
+}
+
+.bottom-half .info:last-child{
+	margin-right: 0px;
+	margin-left: 0px
+}
+
+address{
+	margin-top: 30px;
+	margin-left: 90px;
+	font-size: 12px
+}
+
+footer{
+	font-size: 12px;
+	margin: 50px;
+	text-align: center
+		
+}
 
