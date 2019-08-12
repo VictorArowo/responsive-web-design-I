@@ -59,6 +59,12 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+@media only screen and (max-width: 800px){
+    body{
+        width: 80%;
+        margin: 0px auto;
+    }
+}
 
 .container{
 	display: flex;
@@ -67,7 +73,11 @@ h1, h2, h3, h4, h5 {
 	margin: 0px auto;
 }
 
-
+@media only screen and (max-width: 800px){
+    .container{
+        width: 100%
+    }
+}
 
 header{
 	display: flex;
@@ -76,12 +86,14 @@ header{
 	align-items: center
 }
 
-
 @media only screen and (max-width: 800px){
     header{
         flex-direction: column-reverse;
+        margin: 0px;
+        padding: 0px;
     }
 }
+
 
 nav {
 	display: flex;
@@ -91,15 +103,43 @@ nav {
 	justify-content: space-around;
 }
 
+@media only screen and (max-width: 800px){
+    nav{
+        width: 100%;
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    nav{
+        flex-direction: column;
+        margin-top: 20px
+    }
+}
 
 
 nav a{
 	text-decoration: none;
 	margin: 20px;
-	margin-top: 30px;
-	
+	margin-top: 30px;	
 	color: grey;
 	font-size: 12px;
+}
+
+
+@media only screen and (max-width: 500px){
+    nav a{
+        width: 50%;
+        border-top: 1px solid grey;
+        padding: 10px 0;
+        margin: 0px 20%;
+        text-align: center
+    }
+
+   nav a:nth-of-type(6){
+        border-bottom: 1px solid grey;
+    }
 }
 
 
@@ -121,6 +161,13 @@ header .logo{
 	flex-direction: column;
 }
 
+@media only screen and (max-width: 800px){
+    .image-button{
+        width: 100%
+    }
+
+}
+
 .about .big-text{
 	font-size: 60px;
 	font-weight: bold;
@@ -132,7 +179,11 @@ header .logo{
 @media only screen and (max-width: 800px){
     .about .big-text{
         padding-left: 20%;
-        margin-top: 50px
+        margin-top: 50px;
+        width: 100%;
+        margin: 30px 0;
+        padding: 0px;
+        font-size: 50px
     }
 
 }
@@ -150,12 +201,12 @@ header .logo{
 
 @media only screen and (max-width: 800px){
     .button{
-        margin-left: 60%;
-        margin-top: 10px;
-        height: 40px
+        height: 40px;
+        margin: 0px auto;
 
     }
 }
+
 
 .top-image{
 	width: 300px;
@@ -187,21 +238,85 @@ header .logo{
     font-weight: bold
 }
 
+@media only screen and (max-width: 800px){
+    .main{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .main{
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
 .top-half{
 	display: flex;
 	justify-content:space-around;
+}
+
+@media only screen and (max-width: 800px){
+    .top-half, .bottom-half{
+        width: 100%;
+        height: 100%
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .top-half, .bottom-half{
+        flex-direction: column;
+        width:100% ;
+    }
+
 }
 
 .top-half .info{
 	width: 400px;
 }
 
+@media only screen and (max-width: 500px){
+
+    .top-half .info, .bottom-half .info{
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+}
 
 
 .middle-img{
 	margin: 40px 0px 25px 0px;
 	height: 150px;
 	width: 700px
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .middle-img{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 25px; 
+        margin-top: 25px; 
+
+    }
+ 
+}
+
+@media only screen and (max-width: 500px){
+    .middle-img{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px; 
+    }
+
 }
 
 .bottom-half{
@@ -211,6 +326,15 @@ header .logo{
 .bottom-half .info{
 	width: 230px;
 	margin-right: 50px;
+}
+
+@media only screen and (max-width: 500px){
+
+    .bottom-half .info{
+        width: 100%;
+        margin-bottom: 20px
+    }
+
 }
 
 .bottom-half .info:last-child{
@@ -225,6 +349,14 @@ address{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 800px){
+    address{
+     margin: 2em;
+     margin-bottom: 0px;
+    }    
+
+}
+
 footer{
 	font-size: 12px;
 	margin: 50px;
@@ -232,142 +364,3 @@ footer{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 500px){
-
-    .container{
-        max-width: 90%;
-        margin: 0px auto
-    }
-    header{
-        flex-direction: column-reverse;
-    }
-   nav{
-       flex-direction: column;
-       margin-top: 20px
-   }
-   nav a{
-    width: 50%;
-    border-top: 1px solid grey;
-    padding: 10px 0;
-    margin: 0px 20%;
-    text-align: center
-   }
-
-   nav a:nth-of-type(6){
-    border-bottom: 1px solid grey;
-   }
-
-   .image-button{
-       width: 100%
-   }
-
-   .about .big-text{
-       width: 100%;
-       margin: 30px 0;
-       padding: 0px;
-       font-size: 50px
-   }
-
-   .button{
-       margin: 0px auto;
-   }
-
-   .main{
-       max-width: 100%;
-       padding-bottom: 20px;
-   }
-
-   .top-half, .bottom-half{
-       flex-direction: column;
-       width:100% ;
-   }
-
-   .top-half .info, .bottom-half .info{
-       width: 100%;
-       margin-bottom: 20px
-   }
-
-   .middle-img{
-       width: 100%;
-       height: auto;
-       padding: 0px;
-       margin: 0px;
-       margin-bottom: 20px; 
-   }
-
-   address{
-       margin: 30px;
-    margin-bottom: 0px;
-   }    
-
-}
-
-@media only screen and (max-width: 800px){
-
-    body{
-        width: 80%;
-        margin: 0px auto;
-    }
-    .container{
-        width: 100%
-    }
-    .header{
-        margin: 0px;
-        padding: 0px;
-    }
-
-    nav{
-        width: 100%;
-        margin: 0px auto;
-        padding-top: 20px;
-    }
-
-    .main{
-        width: 100%
-    }
-        .top-half{
-        width: 100%;
-        height: 100%
-    }
-
-    .top-half, .bottom-half{
-        width: 100%;
-    }
-    .image-button{
-        width: 100%
-    }
- 
-    .about .big-text{
-        width: 100%;
-        margin: 30px 0;
-        padding: 0px;
-        font-size: 50px
-    }
- 
-    .button{
-        margin: 0px auto;
-    }
- 
-    .main{
-        max-width: 100%;
-        padding-bottom: 20px;
-    }
- 
-
- 
-    .middle-img{
-        width: 100%;
-        height: auto;
-        padding: 0px;
-        margin: 0px;
-        margin-bottom: 25px; 
-        margin-top: 25px; 
-
-    }
- 
-    address{
-        margin: 30px;
-     margin-bottom: 0px;
-    }    
-
-}
