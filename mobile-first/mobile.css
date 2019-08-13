@@ -79,9 +79,16 @@ header{
 	align-items: center
 }
 
+@media only screen and (min-width: 1200px){
+    header{
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
 nav {
 	display: flex;
-	flex-direction: row;
     width: 100%;
     margin: 0px auto;
     padding-top: 20px;
@@ -89,6 +96,14 @@ nav {
     flex-direction: column;
     margin-top: 20px
 }
+
+ @media only screen and (min-width: 800px){
+    nav{
+        flex-direction: row;
+        width: 500px;
+	    margin-left: 60px;
+    }
+} 
 
 nav a{
 	text-decoration: none;
@@ -101,9 +116,27 @@ nav a{
     text-align: center
 }
 
+
 nav a:nth-of-type(6){
     border-bottom: 1px solid grey;
 }
+
+@media only screen and (min-width: 800px){
+    nav a{
+        margin: 20px;
+        margin-top: 0px;	
+        border-top: none;
+    }
+
+    nav a:nth-of-type(6){
+        border-bottom: none;
+    }
+
+    header .logo{
+        height: 30px;
+        margin-top: 20px
+    }
+} 
 
 .about .big-text{
 	font-weight: bold;
@@ -115,11 +148,35 @@ nav a:nth-of-type(6){
     font-size: 50px
 }
 
+@media only screen and (min-width: 800px){
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+        
+    }
+
+    .image-button{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .big-text{
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 50px
+    }
+} 
+
+
+
 .button{
 	border: 2px solid black;
 	color: black;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 10px 0px;
 	padding-left: 30px;
 	display: block;
 	width: 150px;
@@ -127,8 +184,25 @@ nav a:nth-of-type(6){
     height: 40px;
 }
 
+@media only screen and (min-width: 800px){
+    .button{
+        width: 150px;
+        margin-left: 100px;
+    }
+}
+
 .top-image{
     display: none;
+}
+
+@media only screen and (min-width: 800px){
+    .top-image{
+        width: 300px;
+        height: auto;
+        margin-top: 50px;
+        margin-right: 95px;
+        display: block;
+    }
 }
 
 .main{
@@ -147,6 +221,12 @@ nav a:nth-of-type(6){
     font-weight: bold
 }
 
+@media only screen and (min-width: 800px){
+    .main{
+      width: 750px;
+    }  
+}
+
 .top-half, .bottom-half{
     display: flex;
     flex-direction: column;
@@ -154,10 +234,36 @@ nav a:nth-of-type(6){
 	justify-content:space-around;
 }
 
+@media only screen and (min-width: 800px){
+    .top-half, .bottom-half{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-around;
+    }
+}
+
 .top-half .info, .bottom-half .info{
 	width: 100%;
     margin-bottom: 20px
 }
+
+@media only screen and (min-width: 800px){
+    .top-half .info{
+        width: 400px;
+    }
+
+    .bottom-half .info{
+        width: 230px;
+        margin-right: 50px;
+    }
+
+    .bottom-half .info:last-child{
+        margin-right: 0px;
+        margin-left: 0px
+    }
+}
+
 
 .middle-img{
 	width: 100%;
@@ -175,6 +281,19 @@ address{
     font-weight: bold;
 }
 
+@media only screen and (min-width: 800px){
+    address{
+        margin-top: 30px;
+        margin-left: 90px;
+    }
+}
+
+footer{
+	font-size: 12px;
+	margin: 50px;
+	text-align: center;
+    font-weight: bold;
+}
 
 
 
