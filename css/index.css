@@ -364,3 +364,77 @@ footer{
     font-weight: bold;
 }
 
+
+
+
+/* Services Page */
+
+
+.services{
+	max-width: 700px;
+	font-size: 12px
+}
+
+
+.services-header-img{
+	height: 170px;
+	margin-bottom: 20px;
+}
+
+.about-text{
+	line-height: 15px
+}
+
+.section-details{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0px;
+	padding: 20px 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	line-height: 20px
+
+}
+
+.section-group{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0px;
+	justify-content:space-around; 
+}
+
+.section-content{
+	display: flex;
+	flex-direction: column;
+	background-color:#FAF9FA;
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 20px;
+	align-content: flex-start;
+}
+
+.section-content .button{
+	margin-left: 0px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding-left: 40px;
+	width: 130px;
+	margin-bottom: 10px
+
+}
+
+.bottom{
+	margin: 20px 0;
+	display: flex;
+	line-height: 20px
+}
+
+.services-info-img{
+	width: 350px;
+	margin-left: 20px;
+}
+.bottom li{
+	list-style: disc;
+	margin: 10px;
+}
